@@ -1,0 +1,7 @@
+{
+  "motion": {
+    "durationFast": { "value": "150ms" },
+    "durationNormal": { "value": "300ms" },
+    "easing": { "value": "ease-in-out" }
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "color": {
+      "primary": { "value": "#0066FF" },
+      "primaryHover": { "value": "#0052CC" },
+      "background": { "value": "#FFFFFF" },
+      "text": { "value": "#111111" },
+      "border": { "value": "#E0E0E0" }
+    }
+  }
+  
