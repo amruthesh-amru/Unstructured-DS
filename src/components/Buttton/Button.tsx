@@ -1,6 +1,5 @@
 import React from 'react'
-import '../../build/tokens-light.css'
-import '../../build/tokens-dark.css'
+
 import './Button.css'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
