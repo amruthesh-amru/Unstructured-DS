@@ -1,0 +1,190 @@
+{
+  "font-weight": {
+    "400": {
+      "$type": "string",
+      "$value": "Regular"
+    },
+    "500": {
+      "$type": "string",
+      "$value": "Medium"
+    },
+    "700": {
+      "$type": "string",
+      "$value": "Bold"
+    }
+  },
+  "font-size": {
+    "xs": {
+      "$type": "fontSize",
+      "$value": 11
+    },
+    "s": {
+      "$type": "fontSize",
+      "$value": "{units.12}"
+    },
+    "m": {
+      "$type": "fontSize",
+      "$value": "{units.14}"
+    },
+    "l": {
+      "$type": "fontSize",
+      "$value": "{units.16}"
+    },
+    "xl": {
+      "$type": "fontSize",
+      "$value": "{units.18}"
+    },
+    "2xl": {
+      "$type": "fontSize",
+      "$value": "{units.24}"
+    },
+    "3xl": {
+      "$type": "fontSize",
+      "$value": "{units.32}"
+    },
+    "4xl": {
+      "$type": "fontSize",
+      "$value": "{units.40}"
+    },
+    "5xl": {
+      "$type": "fontSize",
+      "$value": "{units.48}"
+    },
+    "6xl": {
+      "$type": "fontSize",
+      "$value": "{units.56}"
+    },
+    "7xl": {
+      "$type": "fontSize",
+      "$value": "{units.64}"
+    },
+    "8xl": {
+      "$type": "fontSize",
+      "$value": "{units.88}"
+    }
+  },
+  "line-height": {
+    "xs": {
+      "$type": "lineHeight",
+      "$value": "{units.14}"
+    },
+    "s": {
+      "$type": "lineHeight",
+      "$value": "{units.16}"
+    },
+    "m": {
+      "$type": "lineHeight",
+      "$value": "{units.20}"
+    },
+    "l": {
+      "$type": "lineHeight",
+      "$value": "{units.24}"
+    },
+    "xl": {
+      "$type": "lineHeight",
+      "$value": "{units.32}"
+    },
+    "2xl": {
+      "$type": "lineHeight",
+      "$value": "{units.36}"
+    },
+    "3xl": {
+      "$type": "lineHeight",
+      "$value": "{units.42}"
+    },
+    "4xl": {
+      "$type": "lineHeight",
+      "$value": "{units.48}"
+    },
+    "5xl": {
+      "$type": "lineHeight",
+      "$value": "{units.58}"
+    },
+    "6xl": {
+      "$type": "lineHeight",
+      "$value": "{units.62}"
+    },
+    "7xl": {
+      "$type": "lineHeight",
+      "$value": "{units.64}"
+    },
+    "8xl": {
+      "$type": "lineHeight",
+      "$value": "{units.84}"
+    }
+  },
+  "letter-spacing": {
+    "baggy": {
+      "$type": "number",
+      "$value": 0
+    },
+    "loose": {
+      "$type": "number",
+      "$value": -0.20000000298023224
+    },
+    "comfy": {
+      "$type": "number",
+      "$value": -0.4000000059604645
+    },
+    "fitted": {
+      "$type": "number",
+      "$value": -0.6000000238418579
+    },
+    "snug": {
+      "$type": "number",
+      "$value": -1
+    },
+    "tight": {
+      "$type": "number",
+      "$value": -2
+    }
+  },
+  "Border Radius": {
+    "0": {
+      "$type": "borderRadius",
+      "$value": "{units.0}"
+    },
+    "4": {
+      "$type": "borderRadius",
+      "$value": "{units.4}"
+    },
+    "6": {
+      "$type": "borderRadius",
+      "$value": "{units.6}"
+    },
+    "8": {
+      "$type": "borderRadius",
+      "$value": "{units.8}"
+    },
+    "12": {
+      "$type": "borderRadius",
+      "$value": "{units.12}"
+    },
+    "16": {
+      "$type": "borderRadius",
+      "$value": "{units.16}"
+    },
+    "24": {
+      "$type": "borderRadius",
+      "$value": "{units.24}"
+    },
+    "32": {
+      "$type": "borderRadius",
+      "$value": "{units.32}"
+    },
+    "Full": {
+      "$type": "borderRadius",
+      "$value": "{units.250}"
+    }
+  },
+  "font-family": {
+    "Sans": {
+      "$type": "fontFamily",
+      "$value": "Satoshi"
+    },
+    "Display": {
+      "$type": "fontFamily",
+      "$value": "Satoshi Display"
+    }
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "font": {
-    "family": { "value": "Inter, sans-serif" },
-    "sizeBase": { "value": "16px" },
-    "weightRegular": { "value": "400" },
-    "weightBold": { "value": "600" }
-  }
-}

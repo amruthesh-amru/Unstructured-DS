@@ -1,10 +1,12 @@
 import StyleDictionary from 'style-dictionary';
 
-// Light theme configuration
-const lightConfig = {
+// Single theme configuration (light theme)
+const config = {
     source: [
-        'src/tokens/global/*.json',
-        'src/tokens/global/themes/light.json'
+        'src/tokens/Primitives.tokens.json',  // Base colors (Orange, Grey, Red, etc.)
+        'src/tokens/Themes.tokens.json',      // Brand aliases (Brand → Orange)
+        'src/tokens/Modes.tokens.json',       // Semantic tokens (Surface, Text, Border, Icon)
+        'src/tokens/Font.tokens.json'         // Typography
     ],
     platforms: {
         css: {
@@ -12,7 +14,7 @@ const lightConfig = {
             buildPath: 'src/build/',
             files: [
                 {
-                    destination: 'tokens-light.css',
+                    destination: 'tokens.css',
                     format: 'css/variables',
                     options: { selector: ':root' }
                 }
@@ -31,38 +33,12 @@ const lightConfig = {
     }
 };
 
-// Dark theme configuration
-const darkConfig = {
-    source: [
-        'src/tokens/global/*.json',
-        'src/tokens/global/themes/dark.json'
-    ],
-    platforms: {
-        css: {
-            transformGroup: 'css',
-            buildPath: 'src/build/',
-            files: [
-                {
-                    destination: 'tokens-dark.css',
-                    format: 'css/variables',
-                    options: { selector: '[data-theme="dark"]' }
-                }
-            ]
-        }
-    }
-};
-
-// Build both configurations
+// Build the tokens
 const buildTokens = async () => {
-    console.log('Building light theme...');
-    const sdLight = new StyleDictionary(lightConfig);
-    await sdLight.buildAllPlatforms();
-
-    console.log('Building dark theme...');
-    const sdDark = new StyleDictionary(darkConfig);
-    await sdDark.buildAllPlatforms();
-
-    console.log('All tokens built successfully!');
+    console.log('Building tokens...');
+    const sd = new StyleDictionary(config);
+    await sd.buildAllPlatforms();
+    console.log('Tokens built successfully!');
 };
 
 buildTokens();
