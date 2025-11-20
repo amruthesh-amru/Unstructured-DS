@@ -11,7 +11,7 @@ const config = {
     platforms: {
         css: {
             transformGroup: 'css',
-            buildPath: 'src/build/',
+            buildPath: 'src/styles/',
             files: [
                 {
                     destination: 'tokens.css',
