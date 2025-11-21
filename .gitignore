@@ -14,6 +14,24 @@ node_modules
 dist
 dist-ssr
 *.local
+*.tsbuildinfo
+
+# Build outputs
+dist
+dist-ssr
+*.local
+*.tsbuildinfo
+
+# npm pack output
+*.tgz
+
+# Generated token files
+src/build/
+
+
+# Generated files - Icons are auto-generated
+src/icons/**/*
+!src/icons/.gitkeep
 
 # Editor directories and files
 .vscode/*
@@ -44,4 +62,3 @@ coverage
 *.tmp
 *.temp
 .cache
-
