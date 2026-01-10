@@ -1,0 +1,199 @@
+@import url('../../build/tokens.css');
+
+/*     BASE        */
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  color: var(--icon-icon-default);
+}
+
+/* Prevent SVGs from stealing pointer events */
+.icon svg,
+.icon svg * {
+  pointer-events: none;
+}
+
+/*     TONES (NO BACKGROUND) (MATCHES TSX EXACTLY)        */
+
+.icon--Brand {
+  color: var(--icon-icon-brand-default);
+}
+
+.icon--Brand-secondary {
+  color: var(--icon-icon-brand-secondary);
+}
+
+.icon--Success {
+  color: var(--icon-icon-success-default);
+}
+
+.icon--Critical {
+  color: var(--icon-icon-critical-default);
+}
+
+.icon--Caution {
+  color: var(--icon-icon-caution-default);
+}
+
+.icon--Neutral {
+  color: var(--grey-15);
+}
+
+.icon--Neutral-secondary {
+  color: var(--grey-11);
+}
+
+.icon--Disabled {
+  color: var(--grey-9);
+}
+
+.icon--White {
+  color: var(--grey-2);
+}
+
+/*     INTERACTION        */
+
+.icon--interactive {
+  cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.icon--interactive:hover {
+  background-color: var(--surface-surface-secondary-hover);
+}
+
+.icon--interactive:active {
+  background-color: var(--surface-surface-secondary-pressed);
+}
+
+/*     ICONS WITH BACKGROUND
+   (.icon--wbg--Tone)        */
+
+.icon--wbg--Brand {
+  color: var(--icon-icon-brand-default);
+  background-color: var(--surface-surface-brand-secondary-default);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Brand-inverse {
+  color: var(--surface-surface-default);
+  background-color: var(--icon-icon-brand-default);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Brand-secondary {
+  color: var(--icon-icon-brand-secondary);
+  background-color: var(--surface-surface-brand-secondary-default);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Brand-secondary-inverse {
+  color: var(--surface-surface-default);
+  background-color: var(--surface-surface-brand-quaternary-default);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Success {
+  color: var(--icon-icon-success-default);
+  background-color: var(--surface-surface-success-default);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Success-inverse {
+  color: var(--surface-surface-default);
+  background-color: var(--icon-icon-success-default);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Critical {
+  color: var(--icon-icon-critical-default);
+  background-color: var(--surface-surface-error-default);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Critical-inverse {
+  color: var(--surface-surface-default);
+  background-color: var(--icon-icon-critical-default);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Caution {
+  color: var(--surface-surface-warning-secondary);
+  background-color: var(--surface-surface-warning-default);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Caution-inverse {
+  color: var(--surface-surface-default);
+  background-color: var(--surface-surface-warning-secondary);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Neutral {
+  color: var(--grey-15);
+  background-color: var(--grey-2);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Neutral-inverse {
+  color: var(--grey-2);
+  background-color: var(--grey-15);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Neutral-secondary {
+  color: var(--grey-11);
+  background-color: var(--grey-2);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Neutral-secondary-inverse {
+  color: var(--grey-2);
+  background-color: var(--grey-11);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Disabled {
+  color: var(--grey-9);
+  background-color: var(--grey-2);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--Disabled-inverse {
+  color: var(--grey-2);
+  background-color: var(--grey-9);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--White {
+  color: var(--grey-2);
+  background-color: var(--grey-14);
+  padding: calc(var(--units-8) * 1px);
+}
+
+.icon--wbg--White-inverse {
+  color: var(--grey-14);
+  background-color: var(--grey-2);
+  padding: calc(var(--units-8) * 1px);
+}
+
+/*     SIZES (NO BACKGROUND)        */
+
+.icon--xxs { width: 12px; height: 12px; }
+.icon--xs  { width: 16px; height: 16px; }
+.icon--s   { width: 20px; height: 20px; }
+.icon--m   { width: 24px; height: 24px; }
+.icon--l   { width: 32px; height: 32px; }
+.icon--xl  { width: 40px; height: 40px; }
+.icon--xxl { width: 48px; height: 48px; }
+
+/*     SIZES (WITH BACKGROUND)        */
+
+.icon--wbg--s   { width: 12px; height: 12px; }
+.icon--wbg--m   { width: 16px; height: 16px; }
+.icon--wbg--l   { width: 20px; height: 20px; }
+.icon--wbg--xl  { width: 24px; height: 24px; }
+.icon--wbg--xxl { width: 32px; height: 32px; }

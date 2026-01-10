@@ -1,0 +1,720 @@
+{
+  "Modes": {
+    "Surface": {
+      "Surface-Background": {
+        "$value": "{Grey.3}",
+        "$type": "color"
+      },
+      "Surface-Hover": {
+        "$value": "{Grey.3}",
+        "$type": "color"
+      },
+      "Surface-Disabled": {
+        "$value": "{Grey.3}",
+        "$type": "color"
+      },
+      "Surface-Pressed": {
+        "$value": "{Grey.5}",
+        "$type": "color"
+      },
+      "Surface-Selected": {
+        "$value": "{Grey.4}",
+        "$type": "color"
+      },
+      "Surface-Brand-Disabled": {
+        "$value": "{Brand.4}",
+        "$type": "color"
+      },
+      "Surface-Brand-Selected": {
+        "$value": "{Brand.1}",
+        "$type": "color"
+      },
+      "Surface-Brand-Pressed": {
+        "$value": "{Brand.5}",
+        "$type": "color"
+      },
+      "Surface-Brand-Hover": {
+        "$value": "{Brand.2}",
+        "$type": "color"
+      },
+      "Surface-Brand-Default": {
+        "$value": "{Brand.1}",
+        "$type": "color"
+      },
+      "Surface-Success-Tertiary": {
+        "$value": "{Green.12}",
+        "$type": "color"
+      },
+      "Surface-Success-Secondary": {
+        "$value": "{Green.9}",
+        "$type": "color"
+      },
+      "Surface-Success-Default": {
+        "$value": "{Green.2}",
+        "$type": "color"
+      },
+      "Surface-Error-Tertiary": {
+        "$value": "{Red.12}",
+        "$type": "color"
+      },
+      "Surface-Error-Secondary": {
+        "$value": "{Red.9}",
+        "$type": "color"
+      },
+      "Surface-Error-Default": {
+        "$value": "{Red.2}",
+        "$type": "color"
+      },
+      "Surface-Warning-Tertiary": {
+        "$value": "{Yellow.12}",
+        "$type": "color"
+      },
+      "Surface-Warning-Secondary": {
+        "$value": "{Yellow.9}",
+        "$type": "color"
+      },
+      "Surface-Warning-Default": {
+        "$value": "{Yellow.2}",
+        "$type": "color"
+      },
+      "Surface-Secondary-Default": {
+        "$value": "{Grey.2}",
+        "$type": "color"
+      },
+      "Surface-Secondary-Disabled": {
+        "$value": "{Grey.4}",
+        "$type": "color"
+      },
+      "Surface-Secondary-Selected": {
+        "$value": "{Grey.5}",
+        "$type": "color"
+      },
+      "Surface-Secondary-Pressed": {
+        "$value": "{Grey.6}",
+        "$type": "color"
+      },
+      "Surface-Secondary-Hover": {
+        "$value": "{Grey.4}",
+        "$type": "color"
+      },
+      "Surface-Tertiary-Selected": {
+        "$value": "{Grey.6}",
+        "$type": "color"
+      },
+      "Surface-Tertiary-Hover": {
+        "$value": "{Grey.5}",
+        "$type": "color"
+      },
+      "Surface-Tertiary-Default": {
+        "$value": "{Grey.4}",
+        "$type": "color"
+      },
+      "Surface-Tertiary-Pressed": {
+        "$value": "{Grey.7}",
+        "$type": "color"
+      },
+      "Surface-Tertiary-Disabled": {
+        "$value": "{Grey.5}",
+        "$type": "color"
+      },
+      "Surface-Default": {
+        "$value": "{Grey.1}",
+        "$type": "color"
+      },
+      "Surface-Brand-Secondary-Hover": {
+        "$value": "{Brand.3}",
+        "$type": "color"
+      },
+      "Surface-Brand-Secondary-Default": {
+        "$value": "{Brand.2}",
+        "$type": "color"
+      },
+      "Surface-Brand-Secondary-Pressed": {
+        "$value": "{Brand.6}",
+        "$type": "color"
+      },
+      "Surface-Brand-Secondary-Disabled": {
+        "$value": "{Brand.5}",
+        "$type": "color"
+      },
+      "Surface-Brand-Secondary-Selected": {
+        "$value": "{Brand.2}",
+        "$type": "color"
+      },
+      "Surface-Brand-Tertiary-Selected": {
+        "$value": "{Brand.9}",
+        "$type": "color"
+      },
+      "Surface-Brand-Tertiary-Disabled": {
+        "$value": "{Brand.6}",
+        "$type": "color"
+      },
+      "Surface-Brand-Tertiary-Pressed": {
+        "$value": "{Brand.14}",
+        "$type": "color"
+      },
+      "Surface-Brand-Tertiary-Hover": {
+        "$value": "{Brand.12}",
+        "$type": "color"
+      },
+      "Surface-Brand-Tertiary-Default": {
+        "$value": "{Brand.9}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Default": {
+        "$value": "{Grey.16}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Hover": {
+        "$value": "{Grey.14}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Pressed": {
+        "$value": "{Grey.13}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Disabled": {
+        "$value": "{Grey.11}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Selected": {
+        "$value": "{Grey.12}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Secondary-Default": {
+        "$value": "{Grey.15}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Tertiary-Default": {
+        "$value": "{Grey.13}",
+        "$type": "color"
+      },
+      "Surface-Neutral-Default": {
+        "$value": "{Grey.5}",
+        "$type": "color"
+      },
+      "Surface-Neutral-Secondary": {
+        "$value": "{Grey.12}",
+        "$type": "color"
+      },
+      "Surface-Neutral-Tertiary": {
+        "$value": "{Grey.14}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Secondary-Selected": {
+        "$value": "{Grey.11}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Secondary-Disabled": {
+        "$value": "{Grey.10}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Secondary-Pressed": {
+        "$value": "{Grey.12}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Secondary-Hover": {
+        "$value": "{Grey.13}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Tertiary-Selected": {
+        "$value": "{Grey.10}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Tertiary-Disabled": {
+        "$value": "{Grey.9}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Tertiary-Pressed": {
+        "$value": "{Grey.11}",
+        "$type": "color"
+      },
+      "Surface-Inverse-Tertiary-Hover": {
+        "$value": "{Grey.12}",
+        "$type": "color"
+      },
+      "Surface-Brand-Quaternary-Default": {
+        "$value": "{Brand.12}",
+        "$type": "color"
+      }
+    },
+    "Text": {
+      "Text-Default": {
+        "$value": "{Grey.16}",
+        "$type": "color"
+      },
+      "Text-Secondary": {
+        "$value": "{Grey.14}",
+        "$type": "color"
+      },
+      "Text-Tertiary": {
+        "$value": "{Grey.12}",
+        "$type": "color"
+      },
+      "Text-Error-Default": {
+        "$value": "{Red.16}",
+        "$type": "color"
+      },
+      "Text-Brand-Default": {
+        "$value": "{Brand.9}",
+        "$type": "color"
+      },
+      "Text-warning-Default": {
+        "$value": "{Yellow.16}",
+        "$type": "color"
+      },
+      "Text-Success-Default": {
+        "$value": "{Green.16}",
+        "$type": "color"
+      },
+      "Text-Brand-Secondary": {
+        "$value": "{Brand.16}",
+        "$type": "color"
+      },
+      "Text-Inverse-Default": {
+        "$value": "{Grey.10}",
+        "$type": "color"
+      },
+      "Text-Inverse-Secondary": {
+        "$value": "{Grey.9}",
+        "$type": "color"
+      },
+      "Text-Inverse-Tertiary": {
+        "$value": "{Grey.8}",
+        "$type": "color"
+      }
+    },
+    "Border": {
+      "Stroke-Subtle": {
+        "$value": "{Grey.4}",
+        "$type": "color"
+      },
+      "Stroke-Default": {
+        "$value": "{Grey.6}",
+        "$type": "color"
+      },
+      "Stroke-Medium": {
+        "$value": "{Grey.7}",
+        "$type": "color"
+      },
+      "Stroke-Brand": {
+        "$value": "{Brand.3}",
+        "$type": "color"
+      },
+      "Stroke-Error": {
+        "$value": "{Red.9}",
+        "$type": "color"
+      },
+      "Stroke-Success": {
+        "$value": "{Green.9}",
+        "$type": "color"
+      },
+      "Stroke-Warning": {
+        "$value": "{Yellow.9}",
+        "$type": "color"
+      },
+      "Stroke-Disabled": {
+        "$value": "{Grey.6}",
+        "$type": "color"
+      },
+      "Stroke-Brand-Active": {
+        "$value": "{Brand.10}",
+        "$type": "color"
+      },
+      "Stroke-Hover": {
+        "$value": "{Grey.6}",
+        "$type": "color"
+      },
+      "Stroke-Pressed": {
+        "$value": "{Grey.6}",
+        "$type": "color"
+      },
+      "Stroke-Brand-Active-2": {
+        "$value": "{Brand.10}",
+        "$type": "color"
+      },
+      "Stroke-White": {
+        "$value": "{Grey.1}",
+        "$type": "color"
+      }
+    },
+    "Dropshadow": {
+      "success-default": {
+        "$value": "#141414",
+        "$type": "color"
+      }
+    },
+    "Icon": {
+      "Icon-Brand-Default": {
+        "$value": "{Brand.9}",
+        "$type": "color"
+      },
+      "Icon-Brand-Secondary": {
+        "$value": "{Brand.10}",
+        "$type": "color"
+      },
+      "Icon-Success-Default": {
+        "$value": "{Green.9}",
+        "$type": "color"
+      },
+      "Icon-Critical-Default": {
+        "$value": "{Red.9}",
+        "$type": "color"
+      },
+      "Icon-Caution-Default": {
+        "$value": "{Yellow.9}",
+        "$type": "color"
+      },
+      "Icon-Default": {
+        "$value": "{Grey.13}",
+        "$type": "color"
+      },
+      "Icon-Secondary": {
+        "$value": "{Grey.16}",
+        "$type": "color"
+      },
+      "Icon-Disabled": {
+        "$value": "{Grey.9}",
+        "$type": "color"
+      },
+      "Icon-Inverse-Default": {
+        "$value": "{Grey.1}",
+        "$type": "color"
+      },
+      "Icon-Inverse-Secondary": {
+        "$value": "{Grey.3}",
+        "$type": "color"
+      },
+      "Icon-Inverse-Tertiary": {
+        "$value": "{Grey.13}",
+        "$type": "color"
+      },
+      "Icon-Success-Secondary": {
+        "$value": "{Green.12}",
+        "$type": "color"
+      },
+      "Icon-Critical-Secondary": {
+        "$value": "{Red.12}",
+        "$type": "color"
+      },
+      "Icon-Caution-Secondary": {
+        "$value": "{Yellow.12}",
+        "$type": "color"
+      }
+    },
+    "Icon-Button": {
+      "Iconbutton-Background": {
+        "$value": "{Orange.9}",
+        "$type": "color"
+      },
+      "Iconbutton-surface": {
+        "$value": "{Orange.Glass.9}",
+        "$type": "color"
+      },
+      "Iconbutton-Border-radius": {
+        "$value": 2,
+        "$type": "spacing"
+      },
+      "Color": {
+        "$value": "#ffffff",
+        "$type": "color"
+      },
+      "Icon": {
+        "Icon-Default": {
+          "$value": "{Grey.1}",
+          "$type": "color"
+        },
+        "Icon-Secondary-Default": {
+          "$value": "{Grey.16}",
+          "$type": "color"
+        },
+        "Icon-Secondary-Disable": {
+          "$value": "{Grey.8}",
+          "$type": "color"
+        }
+      },
+      "Surface": {
+        "Surface-Brand-Default": {
+          "$value": "{Brand.9}",
+          "$type": "color"
+        },
+        "Surface-Brand-Hover": {
+          "$value": "{Brand.9}",
+          "$type": "color"
+        },
+        "Surface-Brand-Pressed": {
+          "$value": "{Brand.10}",
+          "$type": "color"
+        },
+        "Surface-Brand-Disabled": {
+          "$value": "{Brand.5}",
+          "$type": "color"
+        },
+        "Surface-Success-Default": {
+          "$value": "{Green.9}",
+          "$type": "color"
+        },
+        "Surface-Success-Hover": {
+          "$value": "{Green.9}",
+          "$type": "color"
+        },
+        "Surface-Success-Pressed": {
+          "$value": "{Green.10}",
+          "$type": "color"
+        },
+        "Surface-Success-Disabled": {
+          "$value": "{Green.5}",
+          "$type": "color"
+        },
+        "Surface-Critical-Default": {
+          "$value": "{Red.9}",
+          "$type": "color"
+        },
+        "Surface-Critical-Hover": {
+          "$value": "{Red.9}",
+          "$type": "color"
+        },
+        "Surface-Critical-Pressed": {
+          "$value": "{Yellow.10}",
+          "$type": "color"
+        },
+        "Surface-Caution-Hover": {
+          "$value": "{Yellow.9}",
+          "$type": "color"
+        },
+        "Surface-Caution-Default": {
+          "$value": "{Yellow.9}",
+          "$type": "color"
+        },
+        "Surface-Critical-Disabled": {
+          "$value": "{Yellow.5}",
+          "$type": "color"
+        },
+        "Surface-Caution-Disabled": {
+          "$value": "{Red.5}",
+          "$type": "color"
+        },
+        "Surface-Secondary-Default": {
+          "$value": "{Grey.1}",
+          "$type": "color"
+        },
+        "Surface-Secondary-Hover": {
+          "$value": "{Grey.1}",
+          "$type": "color"
+        },
+        "Surface-Secondary-Pressed": {
+          "$value": "{Grey.2}",
+          "$type": "color"
+        },
+        "Surface-Secondary-Disabled": {
+          "$value": "{Grey.1}",
+          "$type": "color"
+        }
+      },
+      "Border": {
+        "Stroke-Critical": {
+          "$value": "{Red.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Success": {
+          "$value": "{Green.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Caution": {
+          "$value": "{Yellow.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Brand": {
+          "$value": "{Brand.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Secondary": {
+          "$value": "{Grey.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Secondary-Success": {
+          "$value": "{Grey.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Secondary-Critical": {
+          "$value": "{Grey.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Secondary-Caution": {
+          "$value": "{Grey.Glass.9}",
+          "$type": "color"
+        }
+      }
+    },
+    "Button": {
+      "Iconbutton-Background": {
+        "$value": "{Orange.9}",
+        "$type": "color"
+      },
+      "Iconbutton-surface": {
+        "$value": "{Orange.Glass.9}",
+        "$type": "color"
+      },
+      "Iconbutton-Border-radius": {
+        "$value": 2,
+        "$type": "spacing"
+      },
+      "Icon": {
+        "Icon-Default": {
+          "$value": "{Grey.1}",
+          "$type": "color"
+        },
+        "Icon-Secondary-Default": {
+          "$value": "{Grey.16}",
+          "$type": "color"
+        },
+        "Icon-Secondary-Disable": {
+          "$value": "{Grey.8}",
+          "$type": "color"
+        }
+      },
+      "Border": {
+        "Stroke-Brand": {
+          "$value": "{Brand.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Success": {
+          "$value": "{Green.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Critical": {
+          "$value": "{Red.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Caution": {
+          "$value": "{Yellow.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Secondary": {
+          "$value": "{Grey.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Secondary-Success": {
+          "$value": "{Grey.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Secondary-Critical": {
+          "$value": "{Grey.Glass.9}",
+          "$type": "color"
+        },
+        "Stroke-Secondary-Caution": {
+          "$value": "{Grey.Glass.9}",
+          "$type": "color"
+        }
+      },
+      "Background": {
+        "Surface-Brand-Primary-Default": {
+          "$value": "{Brand.9}",
+          "$type": "color"
+        },
+        "Surface-Brand-Primary-Hover": {
+          "$value": "{Brand.9}",
+          "$type": "color"
+        },
+        "Surface-Brand-Primary-Pressed": {
+          "$value": "{Brand.10}",
+          "$type": "color"
+        },
+        "Surface-Brand-Primary-Disabled": {
+          "$value": "{Brand.5}",
+          "$type": "color"
+        },
+        "Surface-Success-Default": {
+          "$value": "{Green.9}",
+          "$type": "color"
+        },
+        "Surface-Success-Hover": {
+          "$value": "{Green.9}",
+          "$type": "color"
+        },
+        "Surface-Success-Pressed": {
+          "$value": "{Green.10}",
+          "$type": "color"
+        },
+        "Surface-Success-Disabled": {
+          "$value": "{Green.5}",
+          "$type": "color"
+        },
+        "Surface-Critical-Default": {
+          "$value": "{Red.9}",
+          "$type": "color"
+        },
+        "Surface-Critical-Hover": {
+          "$value": "{Red.9}",
+          "$type": "color"
+        },
+        "Surface-Caution-Disabled": {
+          "$value": "{Red.5}",
+          "$type": "color"
+        },
+        "Surface-Caution-Default": {
+          "$value": "{Yellow.9}",
+          "$type": "color"
+        },
+        "Surface-Caution-Hover": {
+          "$value": "{Yellow.9}",
+          "$type": "color"
+        },
+        "Surface-Critical-Pressed": {
+          "$value": "{Yellow.10}",
+          "$type": "color"
+        },
+        "Surface-Critical-Disabled": {
+          "$value": "{Yellow.5}",
+          "$type": "color"
+        },
+        "Surface-Brand-Secondary-Default": {
+          "$value": "{Grey.1}",
+          "$type": "color"
+        },
+        "Surface-Secondary-Hover": {
+          "$value": "{Grey.1}",
+          "$type": "color"
+        },
+        "Surface-Secondary-Pressed": {
+          "$value": "{Grey.2}",
+          "$type": "color"
+        },
+        "Surface-Secondary-Disabled": {
+          "$value": "{Grey.1}",
+          "$type": "color"
+        },
+        "Surface-Secondary-Default-2": {
+          "$value": "{Grey.1}",
+          "$type": "color"
+        },
+        "Surface-Brand-Secondary-Hover": {
+          "$value": "{Brand.9}",
+          "$type": "color"
+        },
+        "Surface-Brand-Secondary-Pressed": {
+          "$value": "{Brand.10}",
+          "$type": "color"
+        },
+        "Surface-Brand-Secondary-Disabled": {
+          "$value": "{Brand.5}",
+          "$type": "color"
+        }
+      },
+      "Text": {
+        "Brand-Primary-Default": {
+          "$value": "{Grey.1}",
+          "$type": "color"
+        },
+        "Secondary-Active": {
+          "$value": "{Grey.16}",
+          "$type": "color"
+        },
+        "Secondary-Disable": {
+          "$value": "{Grey.8}",
+          "$type": "color"
+        }
+      }
+    }
+  }
+}

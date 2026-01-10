@@ -1,0 +1,59 @@
+/* Geist Variable */
+@font-face {
+  font-family: Geist;
+  src: url('../../fonts/Geist/Geist-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Trap Static */
+/* Trap Static Fonts */
+@font-face {
+  font-family: Trap;
+  src: url('../../fonts/TrapFont/OpenType-TT/Trap-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Trap;
+  src: url('../../fonts/TrapFont/OpenType-TT/Trap-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Trap;
+  src: url('../../fonts/TrapFont/OpenType-TT/Trap-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Trap;
+  src: url('../../fonts/TrapFont/OpenType-TT/Trap-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Trap;
+  src: url('../../fonts/TrapFont/OpenType-TT/Trap-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Trap;
+  src: url('../../fonts/TrapFont/OpenType-TT/Trap-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

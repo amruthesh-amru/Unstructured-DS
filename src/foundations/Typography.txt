@@ -1,0 +1,205 @@
+import type { Meta, StoryObj } from '@storybook/react';
+import './Typography.css';
+
+const meta: Meta = {
+  title: 'Foundations/Typography',
+  parameters: {
+    layout: 'padded',
+    docs: {
+      description: {
+        component: `Typography styles for Unstructured Design System.
+
+Features include:
+• Font size scale
+• Font weight options
+• Line height settings
+• Font family choices
+
+Use Unstructured-DS using command below:
+\`\`\`bash
+npm install unstructured-ds
+# or
+yarn add unstructured-ds
+\`\`\`
+
+To import this component:
+
+\`\`\`tsx
+import 'unstructured-ds/dist/styles/Typography.css';
+\`\`\`
+        `,
+      },
+    },
+  },
+};
+
+export default meta;
+type Story = StoryObj;
+
+export const Preview: Story = {
+  parameters: {
+    viewMode: 'docs',
+    previewTabs: {
+      canvas: { hidden: true },
+    },
+  },
+
+  render: () => (
+    <div style={{ display: 'grid', gap: 40 }}>
+
+      {/* FONT SCALE */}
+      <section>
+        <h2>Font scale</h2>
+        <p className="typo-s">
+          The font scale defines the available text sizes. Each size maps directly
+          to a font-size token.
+        </p>
+
+        <table width="100%" cellPadding={8}>
+          <thead>
+            <tr>
+              <th align="left">Token</th>
+              <th align="left">CSS Variable</th>
+              <th align="left">Value</th>
+              <th align="left">Preview</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ['xs', '11px'],
+              ['s', '12px'],
+              ['m', '14px'],
+              ['l', '16px'],
+              ['xl', '18px'],
+              ['2xl', '24px'],
+              ['3xl', '32px'],
+              ['4xl', '40px'],
+            ].map(([key, value]) => (
+              <tr key={key}>
+                <td>font-size-{key}</td>
+                <td><code>--font-font-size-{key}</code></td>
+                <td>{value}</td>
+                <td>
+                  <span className={`typography font-sans typo-${key}`}>
+                    The quick brown fox
+                  </span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
+      {/* FONT WEIGHT */}
+      <section>
+        <h2>Font weight</h2>
+        <p className="typo-s">
+          Font weights express emphasis and hierarchy.
+        </p>
+
+        <table width="100%" cellPadding={8}>
+          <thead>
+            <tr>
+              <th align="left">Token</th>
+              <th align="left">CSS Variable</th>
+              <th align="left">Value</th>
+              <th align="left">Preview</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[400, 500, 600, 700, 800, 900].map(weight => (
+              <tr key={weight}>
+                <td>font-weight-{weight}</td>
+                <td><code>--font-font-weight-{weight}</code></td>
+                <td>{weight}</td>
+                <td>
+                  <span className={`typography typo-l font-sans weight-${weight}`}>
+                    Geist-{weight}
+                  </span>
+                </td>
+                <td>
+                  <span className={`typography typo-l font-display weight-${weight}`}>
+                    Trap-{weight}
+                  </span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
+      {/* LINE HEIGHT */}
+      <section>
+        <h2>Line height</h2>
+        <p className="typo-s">
+          Line height controls vertical rhythm and readability.
+        </p>
+
+        <table width="100%" cellPadding={8}>
+          <thead>
+            <tr>
+              <th align="left">Token</th>
+              <th align="left">CSS Variable</th>
+              <th align="left">Preview</th>
+            </tr>
+          </thead>
+          <tbody>
+            {['s', 'm', 'l', 'xl', '2xl', '3xl'].map(key => (
+              <tr key={key}>
+                <td>line-height-{key}</td>
+                <td><code>--font-line-height-{key}</code></td>
+                <td>
+                  <div
+                    className={`typography font-sans typo-m leading-${key}`}
+                    style={{
+                      maxWidth: 420,
+                      padding: 8,
+                      border: '1px dashed #ddd',
+                    }}
+                  >
+                    The quick brown fox jumps over the lazy dog.
+                    Pack my box with five dozen liquor jugs.
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
+      {/* FONT FAMILIES */}
+      <section>
+        <h2>Font families</h2>
+        <p className="typo-s">
+          Two font families are provided: UI and Display.
+        </p>
+
+        <table width="100%" cellPadding={8}>
+          <thead>
+            <tr>
+              <th align="left">Token</th>
+              <th align="left">CSS Variable</th>
+              <th align="left">Preview</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ['sans', 'Geist'],
+              ['display', 'Trap'],
+            ].map(([key, label]) => (
+              <tr key={key}>
+                <td>font-family-{key}</td>
+                <td><code>--font-font-family-{key}</code></td>
+                <td>
+                  <span className={`typography typo-xl font-${key}`}>
+                    {label} — The quick brown fox
+                  </span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    </div>
+  ),
+};

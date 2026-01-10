@@ -1,88 +1,148 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { resolve } from 'path'
-import dts from 'vite-plugin-dts'
-import { readdirSync, statSync } from 'fs'
+/// <reference types="vitest/config" />
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
+import dts from 'vite-plugin-dts';
+import { readdirSync, statSync } from 'fs';
 
 // Dynamically get all icon category directories
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { storybookTest } from '@storybook/addon-vitest/vitest-plugin';
+import { playwright } from '@vitest/browser-playwright';
+const dirname = typeof __dirname !== 'undefined' ? __dirname : path.dirname(fileURLToPath(import.meta.url));
+
+// More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 function getIconCategories() {
-  const iconsDir = resolve(__dirname, 'src/icons')
-  const categories: Record<string, string> = {}
-  
+  const iconsDir = resolve(__dirname, 'src/icons');
+  const categories: Record<string, string> = {};
   try {
-    const entries = readdirSync(iconsDir)
+    const entries = readdirSync(iconsDir);
     entries.forEach(entry => {
-      const entryPath = resolve(iconsDir, entry)
+      const entryPath = resolve(iconsDir, entry);
       if (statSync(entryPath).isDirectory() && entry !== 'index.ts') {
-        const indexPath = resolve(entryPath, 'index.ts')
+        const indexPath = resolve(entryPath, 'index.ts');
         // Check if index.ts exists
         try {
-          statSync(indexPath)
-          categories[`icons/${entry}/index`] = indexPath
+          statSync(indexPath);
+          categories[`icons/${entry}/index`] = indexPath;
         } catch {
           // Index file doesn't exist, skip
         }
       }
-    })
+    });
   } catch (error) {
-    console.warn('Could not read icon categories:', error)
+    console.warn('Could not read icon categories:', error);
   }
-  
-  return categories
+  return categories;
 }
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    dts({
-      insertTypesEntry: true,
-      include: ['src'],
-      exclude: ['**/*.test.ts', '**/*.test.tsx', 'src/App.tsx', 'src/main.tsx']
-    })
-  ],
-  
+  plugins: [react(), dts({
+    insertTypesEntry: true,
+    include: ['src'],
+    exclude: ['**/*.test.ts', '**/*.test.tsx', 'src/App.tsx', 'src/main.tsx']
+  })],
   build: {
     lib: {
       entry: {
         index: resolve(__dirname, 'src/index.ts'),
         'components/index': resolve(__dirname, 'src/components/index.ts'),
         'icons/index': resolve(__dirname, 'src/icons/index.ts'),
-        ...getIconCategories(),
+        ...getIconCategories()
       },
-      formats: ['es', 'cjs'],
+      formats: ['es', 'cjs']
     },
-    
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime'],
-      
+      external: ['react', 'react-dom', 'react/jsx-runtime','@storybook/*',
+        '@storybook/manager-api',
+        '@storybook/theming',],
       output: {
         preserveModules: true,
         preserveModulesRoot: 'src',
-        
         globals: {
           react: 'React',
-          'react-dom': 'ReactDOM',
+          'react-dom': 'ReactDOM'
         },
-        
-        assetFileNames: (assetInfo) => {
+        assetFileNames: assetInfo => {
           if (assetInfo.name?.endsWith('.css')) {
-            return 'styles/[name][extname]'
+            return 'styles/[name][extname]';
           }
-          return 'assets/[name][extname]'
+          return 'assets/[name][extname]';
         }
       }
     },
-    
     sourcemap: true,
     emptyOutDir: true,
-    
-    cssCodeSplit: false,
+    cssCodeSplit: false
   },
-  
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
     }
+  },
+  test: {
+    projects: [{
+      extends: true,
+      plugins: [
+      // The plugin will run tests for the stories defined in your Storybook config
+      // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
+      storybookTest({
+        configDir: path.join(dirname, '.storybook')
+      })],
+      test: {
+        name: 'storybook',
+        browser: {
+          enabled: true,
+          headless: true,
+          provider: playwright({}),
+          instances: [{
+            browser: 'chromium'
+          }]
+        },
+        setupFiles: ['.storybook/vitest.setup.ts']
+      }
+    }, {
+      extends: true,
+      plugins: [
+      // The plugin will run tests for the stories defined in your Storybook config
+      // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
+      storybookTest({
+        configDir: path.join(dirname, '.storybook')
+      })],
+      test: {
+        name: 'storybook',
+        browser: {
+          enabled: true,
+          headless: true,
+          provider: playwright({}),
+          instances: [{
+            browser: 'chromium'
+          }]
+        },
+        setupFiles: ['.storybook/vitest.setup.ts']
+      }
+    }, {
+      extends: true,
+      plugins: [
+      // The plugin will run tests for the stories defined in your Storybook config
+      // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
+      storybookTest({
+        configDir: path.join(dirname, '.storybook')
+      })],
+      test: {
+        name: 'storybook',
+        browser: {
+          enabled: true,
+          headless: true,
+          provider: playwright({}),
+          instances: [{
+            browser: 'chromium'
+          }]
+        },
+        setupFiles: ['.storybook/vitest.setup.ts']
+      }
+    }]
   }
-})
+});
