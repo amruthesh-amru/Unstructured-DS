@@ -1,0 +1,208 @@
+{
+  "Font": {
+    "font-weight": {
+      "400": {
+        "$value": "400",
+        "$type": "string"
+      },
+      "500": {
+        "$value": "500",
+        "$type": "string"
+      },
+      "600": {
+        "$value": "600",
+        "$type": "string"
+      },
+      "700": {
+        "$value": "700",
+        "$type": "string"
+      },
+      "800": {
+        "$value": "800",
+        "$type": "string"
+      },
+      "900": {
+        "$value": "900",
+        "$type": "string"
+      }
+    },
+    "font-size": {
+      "xs": {
+        "$value": "11px",
+        "$type": "fontSize"
+      },
+      "s": {
+        "$value": "{units.12}px",
+        "$type": "fontSize"
+      },
+      "m": {
+        "$value": "{units.14}px",
+        "$type": "fontSize"
+      },
+      "l": {
+        "$value": "{units.16}px",
+        "$type": "fontSize"
+      },
+      "xl": {
+        "$value": "{units.18}px",
+        "$type": "fontSize"
+      },
+      "2xl": {
+        "$value": "{units.24}px",
+        "$type": "fontSize"
+      },
+      "3xl": {
+        "$value": "{units.32}px",
+        "$type": "fontSize"
+      },
+      "4xl": {
+        "$value": "{units.40}px",
+        "$type": "fontSize"
+      },
+      "5xl": {
+        "$value": "{units.48}px",
+        "$type": "fontSize"
+      },
+      "6xl": {
+        "$value": "{units.56}px",
+        "$type": "fontSize"
+      },
+      "7xl": {
+        "$value": "{units.64}px",
+        "$type": "fontSize"
+      },
+      "8xl": {
+        "$value": "{units.88}px",
+        "$type": "fontSize"
+      }
+    },
+    "line-height": {
+      "xs": {
+        "$value": "{units.14}px",
+        "$type": "lineHeight"
+      },
+      "s": {
+        "$value": "{units.16}px",
+        "$type": "lineHeight"
+      },
+      "m": {
+        "$value": "{units.20}px",
+        "$type": "lineHeight"
+      },
+      "l": {
+        "$value": "{units.24}px",
+        "$type": "lineHeight"
+      },
+      "xl": {
+        "$value": "{units.32}px",
+        "$type": "lineHeight"
+      },
+      "2xl": {
+        "$value": "{units.36}px",
+        "$type": "lineHeight"
+      },
+      "3xl": {
+        "$value": "{units.42}px",
+        "$type": "lineHeight"
+      },
+      "4xl": {
+        "$value": "{units.48}px",
+        "$type": "lineHeight"
+      },
+      "5xl": {
+        "$value": "{units.58}px",
+        "$type": "lineHeight"
+      },
+      "6xl": {
+        "$value": "{units.62}px",
+        "$type": "lineHeight"
+      },
+      "7xl": {
+        "$value": "{units.64}px",
+        "$type": "lineHeight"
+      },
+      "8xl": {
+        "$value": "{units.84}px",
+        "$type": "lineHeight"
+      }
+    },
+    "letter-spacing": {
+      "baggy": {
+        "$value": "0em",
+        "$type": "letterSpacing"
+      },
+      "loose": {
+        "$value": "-0.20000000298023224em",
+        "$type": "letterSpacing"
+      },
+      "comfy": {
+        "$value": "-0.4000000059604645em",
+        "$type": "letterSpacing"
+      },
+      "trim": {
+        "$value": "-0.6000000238418579em",
+        "$type": "letterSpacing"
+      },
+      "snug": {
+        "$value": "-1em",
+        "$type": "letterSpacing"
+      },
+      "tight": {
+        "$value": "-2em",
+        "$type": "letterSpacing"
+      },
+      "fitted": {
+        "$value": "-0.8999999761581421em",
+        "$type": "letterSpacing"
+      }
+    },
+    "Border-Radius": {
+      "0": {
+        "$value": "{units.0}px",
+        "$type": "borderRadius"
+      },
+      "4": {
+        "$value": "{units.4}px",
+        "$type": "borderRadius"
+      },
+      "6": {
+        "$value": "{units.6}px",
+        "$type": "borderRadius"
+      },
+      "8": {
+        "$value": "{units.8}px",
+        "$type": "borderRadius"
+      },
+      "12": {
+        "$value": "{units.12}px",
+        "$type": "borderRadius"
+      },
+      "16": {
+        "$value": "{units.16}px",
+        "$type": "borderRadius"
+      },
+      "24": {
+        "$value": "{units.24}px",
+        "$type": "borderRadius"
+      },
+      "32": {
+        "$value": "{units.32}px",
+        "$type": "borderRadius"
+      },
+      "Full": {
+        "$value": "{units.250}px",
+        "$type": "borderRadius"
+      }
+    },
+    "font-family": {
+      "Sans": {
+        "$value": "Geist",
+        "$type": "fontFamilies"
+      },
+      "Display": {
+        "$value": "Trap",
+        "$type": "fontFamilies"
+      }
+    }
+  }
+}

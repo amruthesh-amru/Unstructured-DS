@@ -1,0 +1,54 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --font-font-weight-400: 400;
+  --font-font-weight-500: 500;
+  --font-font-weight-600: 600;
+  --font-font-weight-700: 700;
+  --font-font-weight-800: 800;
+  --font-font-weight-900: 900;
+  --font-font-size-xs: 11px;
+  --font-font-size-s: 12px;
+  --font-font-size-m: 14px;
+  --font-font-size-l: 16px;
+  --font-font-size-xl: 18px;
+  --font-font-size-2xl: 24px;
+  --font-font-size-3xl: 32px;
+  --font-font-size-4xl: 40px;
+  --font-font-size-5xl: 48px;
+  --font-font-size-6xl: 56px;
+  --font-font-size-7xl: 64px;
+  --font-font-size-8xl: 88px;
+  --font-line-height-xs: 14px;
+  --font-line-height-s: 16px;
+  --font-line-height-m: 20px;
+  --font-line-height-l: 24px;
+  --font-line-height-xl: 32px;
+  --font-line-height-2xl: 36px;
+  --font-line-height-3xl: 42px;
+  --font-line-height-4xl: 48px;
+  --font-line-height-5xl: 58px;
+  --font-line-height-6xl: 62px;
+  --font-line-height-7xl: 64px;
+  --font-line-height-8xl: 84px;
+  --font-letter-spacing-baggy: 0em;
+  --font-letter-spacing-loose: -0.20000000298023224em;
+  --font-letter-spacing-comfy: -0.4000000059604645em;
+  --font-letter-spacing-trim: -0.6000000238418579em;
+  --font-letter-spacing-snug: -1em;
+  --font-letter-spacing-tight: -2em;
+  --font-letter-spacing-fitted: -0.8999999761581421em;
+  --font-border-radius-0: 0px;
+  --font-border-radius-4: 4px;
+  --font-border-radius-6: 6px;
+  --font-border-radius-8: 8px;
+  --font-border-radius-12: 12px;
+  --font-border-radius-16: 16px;
+  --font-border-radius-24: 24px;
+  --font-border-radius-32: 32px;
+  --font-border-radius-full: 250px;
+  --font-font-family-sans: Geist;
+  --font-font-family-display: Trap;
+}

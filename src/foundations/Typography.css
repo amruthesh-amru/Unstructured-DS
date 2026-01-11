@@ -1,0 +1,67 @@
+@import '../../build/tokens/typography.css';
+
+/* --------------------------------------------------
+ * Base
+ * -------------------------------------------------- */
+.typography {
+  color: var(--text-text-default);
+}
+
+/* --------------------------------------------------
+ * Font sizes + default line-heights
+ * -------------------------------------------------- */
+.typo-xs { font-size: var(--font-font-size-xs);  }
+.typo-s  { font-size: var(--font-font-size-s);  }
+.typo-m  { font-size: var(--font-font-size-m);  }
+.typo-l  { font-size: var(--font-font-size-l); }
+.typo-xl { font-size: var(--font-font-size-xl); }
+.typo-2xl{ font-size: var(--font-font-size-2xl);  }
+.typo-3xl{ font-size: var(--font-font-size-3xl);  }
+.typo-4xl{ font-size: var(--font-font-size-4xl);  }
+
+/* --------------------------------------------------
+ * Font weights
+ * -------------------------------------------------- */
+.weight-400 { font-weight: var(--font-font-weight-400); }
+.weight-500 { font-weight: var(--font-font-weight-500); }
+.weight-600 { font-weight: var(--font-font-weight-600); }
+.weight-700 { font-weight: var(--font-font-weight-700); }
+.weight-800 { font-weight: var(--font-font-weight-800); }
+.weight-900 { font-weight: var(--font-font-weight-900); }
+
+/* --------------------------------------------------
+ * Letter spacing (tracking)
+ * -------------------------------------------------- */
+.track-baggy { letter-spacing: var(--font-letter-spacing-baggy); }
+.track-loose { letter-spacing: var(--font-letter-spacing-loose); }
+.track-comfy { letter-spacing: var(--font-letter-spacing-comfy); }
+.track-trim  { letter-spacing: var(--font-letter-spacing-trim); }
+.track-snug  { letter-spacing: var(--font-letter-spacing-snug); }
+.track-tight { letter-spacing: var(--font-letter-spacing-tight); }
+
+/* --------------------------------------------------
+ * Line heights (explicit utilities)
+ * -------------------------------------------------- */
+.leading-xs { line-height: var(--font-line-height-xs); }
+.leading-s  { line-height: var(--font-line-height-s); }
+.leading-m  { line-height: var(--font-line-height-m); }
+.leading-l  { line-height: var(--font-line-height-l); }
+.leading-xl { line-height: var(--font-line-height-xl); }
+.leading-2xl{ line-height: var(--font-line-height-2xl); }
+.leading-3xl{ line-height: var(--font-line-height-3xl); }
+.leading-4xl{ line-height: var(--font-line-height-4xl); }
+.leading-5xl{ line-height: var(--font-line-height-5xl); }
+.leading-6xl{ line-height: var(--font-line-height-6xl); }
+.leading-7xl{ line-height: var(--font-line-height-7xl); }
+.leading-8xl{ line-height: var(--font-line-height-8xl); }
+
+/* --------------------------------------------------
+ * Font families
+ * -------------------------------------------------- */
+.font-sans {
+  font-family: var(--font-font-family-sans);
+}
+
+.font-display {
+  font-family: var(--font-font-family-display);
+}

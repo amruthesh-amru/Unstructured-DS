@@ -1,0 +1,157 @@
+import type { Meta, StoryObj } from '@storybook/react';
+import type { IconProps } from './IconComponent';
+import IconComponent from './IconComponent';
+import * as Icons from '../../icons';
+import { BorderRadiusFull } from '../..';
+
+/**
+ * Pick a safe default icon from the registry
+ */
+
+const meta: Meta<typeof IconComponent> = {
+  title: 'Components/IconComponent',
+  component: IconComponent,
+  tags: ['autodocs'],
+
+  args: {
+    icon: "Ic_Fire_Filled",
+    size: 'm',
+    tone: 'Brand',
+    withBackground: false,
+    inverse: false,
+    'aria-label': 'IconComponent',
+  },
+
+  argTypes: {
+    icon: {
+      control: 'select',
+      options: Object.keys(Icons),
+    },
+    size: {
+      control: 'radio',
+      options: ['xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl'],
+    },
+    tone: {
+      control: 'select',
+      options: [
+        'Brand',
+        'Brand-secondary',
+        'Success',
+        'Critical',
+        'Caution',
+        'Neutral',
+        'Neutral-secondary',
+        'Disabled',
+        'White',
+      ],
+    },
+    withBackground: { control: 'boolean' },
+    inverse: { control: 'boolean' },
+  },
+
+  parameters: {
+    docs: {
+      description: {
+        component: `
+IconComponents are used to represent actions, states, or concepts.
+
+  • Token-based sizing  
+  • Optional background for sizes > xs  
+  • Inverse support for dark surfaces  
+  • Interactive state support  
+  • Accessible via aria-label  
+Use Unstructured-DS using command below:
+\`\`\`bash
+npm install unstructured-ds
+# or
+yarn add unstructured-ds
+\`\`\`
+
+To import this component:
+
+\`\`\`tsx
+import { IconComponent } from '../node_modules/unstructured-ds/dist/components/IconComponent';
+\`\`\`
+        `,
+      },
+    },
+  },
+};
+
+export default meta;
+type Story = StoryObj<typeof IconComponent>;
+
+
+// --------------------
+// BASIC STORIES
+// --------------------
+
+export const Default: Story = {};
+
+export const WithBackground: Story = {
+  args: {
+    withBackground: true,
+    size: 'l',
+  },
+};
+
+export const Inverse: Story = {
+  args: {
+    withBackground: true,
+    inverse: true,
+    size: 'l',
+  },
+};
+
+
+// --------------------
+// SHOWCASES
+// --------------------
+
+export const Sizes: Story = {
+  render: (args) => (
+    <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
+      {(['xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl'] as const).map((size) => (
+        <IconComponent key={size} {...args} size={size} />
+      ))}
+    </div>
+  ),
+};
+
+export const Tones: Story = {
+  args: {
+    size: "xxs"
+  },
+
+  render: (args) => (
+    <div
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(4, auto)',
+        gap: 16,
+      }}
+    >
+      {[
+        'Brand',
+        'Brand-secondary',
+        'Success',
+        'Critical',
+        'Caution',
+        'Neutral',
+        'Neutral-secondary',
+        'Disabled',
+        'White',
+      ].map((tone) => (
+        <div style={{ borderRadius: BorderRadiusFull, overflow: 'hidden', display: 'inline-flex' }}>
+        <IconComponent
+          key={tone}
+          {...args}
+          tone={tone as IconProps['tone']}
+          withBackground
+          size="l"
+        />
+        </div>
+      ))}
+    </div>
+  )
+};

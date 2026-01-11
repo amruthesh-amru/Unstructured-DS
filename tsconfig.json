@@ -1,4 +1,16 @@
 {
+  "compilerOptions": {
+    "types": ["node", "storybook__react"],
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  },
+  
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".storybook",
+    "src",
+  ],
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
