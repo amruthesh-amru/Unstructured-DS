@@ -1,4 +1,8 @@
 import type { StorybookConfig } from '@storybook/react-vite';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const config: StorybookConfig = {
   "stories": [
@@ -11,6 +15,12 @@ const config: StorybookConfig = {
     "@storybook/addon-a11y",
     "@storybook/addon-docs",
   ],
-  "framework": "@storybook/react-vite"
+  "framework": "@storybook/react-vite",
+  "staticDirs": [
+    {
+      "from": resolve(__dirname, "../fonts"),
+      "to": "/fonts"
+    }
+  ]
 };
 export default config;

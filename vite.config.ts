@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 import dts from 'vite-plugin-dts';
+import { libInjectCss } from 'vite-plugin-lib-inject-css';
 import { readdirSync, statSync } from 'fs';
 
 // Dynamically get all icon category directories
@@ -39,7 +40,7 @@ function getIconCategories() {
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), dts({
+  plugins: [react(), libInjectCss(), dts({
     insertTypesEntry: true,
     include: ['src'],
     exclude: ['**/*.test.ts', '**/*.test.tsx', 'src/App.tsx', 'src/main.tsx']
@@ -55,7 +56,7 @@ export default defineConfig({
       formats: ['es', 'cjs']
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime','@storybook/*',
+      external: ['react', 'react-dom', 'react/jsx-runtime', '@storybook/*',
         '@storybook/manager-api',
         '@storybook/theming',],
       output: {
@@ -75,7 +76,7 @@ export default defineConfig({
     },
     sourcemap: true,
     emptyOutDir: true,
-    cssCodeSplit: false
+    cssCodeSplit: true
   },
   resolve: {
     alias: {
@@ -86,11 +87,11 @@ export default defineConfig({
     projects: [{
       extends: true,
       plugins: [
-      // The plugin will run tests for the stories defined in your Storybook config
-      // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
-      storybookTest({
-        configDir: path.join(dirname, '.storybook')
-      })],
+        // The plugin will run tests for the stories defined in your Storybook config
+        // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
+        storybookTest({
+          configDir: path.join(dirname, '.storybook')
+        })],
       test: {
         name: 'storybook',
         browser: {
@@ -106,11 +107,11 @@ export default defineConfig({
     }, {
       extends: true,
       plugins: [
-      // The plugin will run tests for the stories defined in your Storybook config
-      // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
-      storybookTest({
-        configDir: path.join(dirname, '.storybook')
-      })],
+        // The plugin will run tests for the stories defined in your Storybook config
+        // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
+        storybookTest({
+          configDir: path.join(dirname, '.storybook')
+        })],
       test: {
         name: 'storybook',
         browser: {
@@ -126,11 +127,11 @@ export default defineConfig({
     }, {
       extends: true,
       plugins: [
-      // The plugin will run tests for the stories defined in your Storybook config
-      // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
-      storybookTest({
-        configDir: path.join(dirname, '.storybook')
-      })],
+        // The plugin will run tests for the stories defined in your Storybook config
+        // See options at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon#storybooktest
+        storybookTest({
+          configDir: path.join(dirname, '.storybook')
+        })],
       test: {
         name: 'storybook',
         browser: {
